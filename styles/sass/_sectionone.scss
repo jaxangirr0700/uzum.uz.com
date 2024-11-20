@@ -1,0 +1,161 @@
+//
+.sec-one {
+  .boxss {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .cardss {
+      // border: 2px solid gray;
+      max-width: 250px;
+      max-height: 500px;
+      // background-color: gray;
+      border-radius: 10px;
+      position: relative;
+      margin-bottom: 20px;
+      .itemss {
+        position: relative;
+        .sertsa {
+          position: absolute;
+          right: 10px;
+          top: 20px;
+          width: 25px;
+        }
+        .aksiya {
+          position: absolute;
+          left: 5px;
+          bottom: 2px;
+          width: 80px;
+          height: 25px;
+        }
+        .item-imggg {
+          width: 100%;
+          max-height: 350px;
+        }
+      }
+      .cardss-title {
+        padding: 10px;
+        p {
+          font-size: 13px;
+          margin: 0;
+        }
+        .yellow {
+          margin-top: 10px;
+          background-color: yellow;
+          font-size: 15px;
+          max-width: 140px;
+          padding: 0px 8px;
+          height: 30px;
+          border-radius: 7px;
+          text-align: center;
+        }
+        .del {
+          text-decoration: line-through;
+          margin-top: 15px;
+        }
+      }
+      .korzz {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        width: 40px;
+      }
+    }
+  }
+}
+.lincs {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  text-decoration: none;
+  color: rgba(31, 32, 38, 1);
+  margin-top: 21px;
+  margin-bottom: 37px;
+}
+.yana-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yana-korsatish-20 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: center;
+  text-decoration-skip-ink: none;
+
+  border: none;
+  background-color: rgba(242, 244, 247, 1);
+width: 40%;
+height: 50px;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+footer {
+  .ul-box-footer {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    margin-bottom: 55px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      list-style: none;
+      .onth {
+        color: black !important;
+
+        img {
+          width: 30px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: gray;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+      }
+      .liapp {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      .play {
+        display: flex;
+        align-items: center;
+      }
+      .plyon {
+        margin-bottom: 40px;
+      }
+      .contact {
+        display: flex;
+        gap: 15px;
+      }
+    }
+  }
+  .ftr-title {
+    margin-top: 5px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .maxfiy {
+      display: flex;
+      a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
