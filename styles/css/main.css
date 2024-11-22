@@ -12,6 +12,10 @@
   border-radius: 10px;
   position: relative;
   margin-bottom: 20px;
+  overflow: hidden;
+}
+.sec-one .boxss .cardss:hover img {
+  transform: scale(1.1);
 }
 .sec-one .boxss .cardss .itemss {
   position: relative;
@@ -22,12 +26,37 @@
   top: 20px;
   width: 25px;
 }
+.sec-one .boxss .cardss .itemss .sertsa:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.sec-one .boxss .cardss .itemss .sertsa:active {
+  background-color: red;
+  border-radius: 90%;
+}
 .sec-one .boxss .cardss .itemss .aksiya {
   position: absolute;
-  left: 5px;
+  left: 10px;
   bottom: 2px;
-  width: 80px;
-  height: 25px;
+  padding: 5px 10px;
+  background-color: rgb(112, 0, 255);
+  color: white;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  animation: dr 0.7s infinite ease-out;
+}
+@keyframes dr {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }
 .sec-one .boxss .cardss .itemss .item-imggg {
   width: 100%;
@@ -45,8 +74,7 @@
   background-color: yellow;
   font-size: 15px;
   max-width: 140px;
-  padding: 0px 8px;
-  height: 30px;
+  padding: 5px 8px;
   border-radius: 7px;
   text-align: center;
 }
@@ -59,6 +87,13 @@
   right: 10px;
   bottom: 0;
   width: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+.sec-one .boxss .cardss .korzz:hover {
+  transform: scale(1.1);
+  background-color: lightgray;
 }
 
 .lincs {
@@ -122,6 +157,9 @@ footer .ul-box-footer ul a {
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
+footer .ul-box-footer ul a:hover {
+  text-shadow: 1px 1px 10px gray;
+}
 footer .ul-box-footer ul .liapp {
   display: flex;
   flex-wrap: wrap;
@@ -131,13 +169,14 @@ footer .ul-box-footer ul .liapp {
 footer .ul-box-footer ul .play {
   display: flex;
   align-items: center;
-}
-footer .ul-box-footer ul .plyon {
-  margin-bottom: 40px;
+  gap: 5px;
 }
 footer .ul-box-footer ul .contact {
   display: flex;
   gap: 15px;
+}
+footer .ul-box-footer ul .contact img {
+  cursor: pointer;
 }
 footer .ftr-title {
   margin-top: 5px;
@@ -162,6 +201,7 @@ footer .ftr-title .maxfiy a {
   box-sizing: border-box;
   font-family: "Roboto";
   scroll-behavior: smooth;
+  transition: all 0.5s;
 }
 * a {
   cursor: pointer;
@@ -170,12 +210,6 @@ footer .ftr-title .maxfiy a {
   transition: all 0.4s;
   border-radius: 15px;
 }
-* a:hover {
-  padding: 5px 1px;
-  border: 1px solid gray;
-  border-radius: 15px;
-}
-
 .container {
   max-width: 1990px;
   margin: 0 auto;
@@ -207,17 +241,25 @@ footer .ftr-title .maxfiy a {
 }
 
 header {
-  padding-top: 25px !important;
   padding-bottom: 0;
 }
 
-.header-box {
+.first-box {
   background-color: rgb(242, 244, 247);
+}
+.first-box .header-box {
+  max-width: 1990px;
+  padding: 0px 130px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .h-b-item {
@@ -248,29 +290,65 @@ header {
 nav .desktop {
   display: flex;
   list-style: none;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   margin-bottom: 20px;
 }
 nav .desktop form {
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   align-items: center;
   border-radius: 5px;
 }
 nav .desktop form input {
+  width: 30vh;
   border: 1px solid rgba(54, 54, 64, 0.2);
   padding: 12px 16px;
   border-radius: 5px;
 }
 nav .desktop form button {
   border-radius: 5px;
+  cursor: pointer;
   background-color: rgb(242, 244, 247);
   color: black;
   border: 1px solid rgba(54, 54, 64, 0.2);
   padding: 6px 31px;
+}
+nav .desktop form button:hover {
+  background-color: rgb(186, 186, 186);
+}
+nav .desktop .katalog {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: rgb(240, 240, 255);
+  color: rgb(112, 0, 255);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav .desktop .katalog:hover {
+  transform: scale(1.1);
+}
+nav .desktop .kirish {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+nav .desktop .kirish p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+nav .desktop .kirish:hover img {
+  transform: scale(1.5);
 }
 
 .nav-title {
@@ -288,6 +366,7 @@ nav .desktop form button {
 .nav-title .select-yana {
   background: transparent;
   border: none;
+  cursor: pointer;
   color: gray;
 }
 
@@ -360,6 +439,10 @@ main .button-prev img {
 @media (max-width: 920px) {
   .sec-one .boxss .cardss {
     width: 200px;
+  }
+  .sec-one .boxss .cardss .itemss .aksiya {
+    font-size: 10px;
+    padding: 0px 2px;
   }
 }
 @media (max-width: 900px) {
